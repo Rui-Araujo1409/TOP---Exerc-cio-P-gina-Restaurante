@@ -12,7 +12,6 @@ const textoElemento = document.createElement("p");
 const imagem = document.createElement("img");
 imagem.src = teorba;
 
-divTítulo.classList.add("titulo");
 divConteúdo.appendChild(divTítulo);
 divTítulo.appendChild(títuloElemento);
 divConteúdo.appendChild(divImagem);
@@ -22,5 +21,9 @@ divTexto.appendChild(textoElemento);
 
 títuloElemento.textContent = título;
 textoElemento.textContent = texto;
+
+divTítulo.setAttribute("id","titulo");
+divTexto.setAttribute("id", "bloco-texto");
+divImagem.setAttribute("id", "banner");
 
 export {títuloElemento, imagem, textoElemento};
