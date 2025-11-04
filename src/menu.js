@@ -27,6 +27,4 @@ export const menu = () => {
     textoElemento.textContent = texto;
     preçoElemento.textContent = preço;
 
-    //return { textoSobre };
-
 };

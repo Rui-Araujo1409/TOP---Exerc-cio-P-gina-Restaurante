@@ -17,8 +17,6 @@ export const sobre = () => {
     títuloElemento.textContent = título;
     textoSobre.textContent = texto;
 
-    //return { textoSobre };
-
 };
 
 
