@@ -1,6 +1,8 @@
 import "./styles.css";
-import {títuloElemento, imagem, textoElemento} from "./homepage.js";
-import {textoDiv} from "./sobre.js";
+import { homepage } from "./homepage.js";
+import { sobre } from "./sobre.js";
+import { menu } from "./menu.js";
+import { local } from "./local.js";
 
 const conteúdo = document.querySelector("#conteudo");
 
@@ -9,22 +11,24 @@ const botãoMenu = document.querySelector("#menu");
 const botãoLocal = document.querySelector("#local")
 const botãoSobre = document.querySelector("#sobre");
 
+homepage();
+
 botãoSobre.addEventListener("click", () => {
-conteúdo.innerHTML = "";
-conteúdo.innerHTML = "Sobre";
+    conteúdo.innerHTML = "";
+    sobre();
 });
 
 botãoHomepage.addEventListener("click", () => {
     conteúdo.innerHTML = "";
-    conteúdo.textContent = "Home";
+    homepage();
 });
 
-botãoMenu.addEventListener("click", () =>{
+botãoMenu.addEventListener("click", () => {
     conteúdo.innerHTML = "";
-    conteúdo.textContent = "Menu";
+    menu();
 });
 
 botãoLocal.addEventListener("click", () => {
     conteúdo.innerHTML = "";
-    conteúdo.textContent = "Local";
+    local();
 });
